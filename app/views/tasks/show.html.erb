@@ -1,0 +1,6 @@
+<h2><%= @task.title %></h2>
+<div class="container">
+  <div class = "details"><%= @task.details %></div>
+  <div class="task"><%= @task.completed == true ? "[x] This task is completed" : "[ ] This task is not completed yet" %></div>
+  <p><%= link_to "Back to list", tasks_path  %></p>
+</div>
